@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org">
+<body>
+<form>
+  <input type="hidden" id="form-id" th:value="${teacher!=null?teacher.id:''}">
+  <div class="form-group">
+    <label for="form-tname">教师名称</label>
+    <div class="input-group">
+        <span class="input-group-addon ">
+          <span class="glyphicon glyphicon-user"></span>
+        </span>
+      <input type="text" class="form-control" id="form-tname" placeholder="" th:value="${teacher!=null?teacher.tname:''}">
+    </div>
+  </div>
+</form>
+
+</body>
+</html>
